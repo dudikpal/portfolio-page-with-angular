@@ -8,7 +8,10 @@ import { HeroComponent } from './part/hero/hero.component';
 import { AboutComponent } from './part/about/about.component';
 import { SkillsComponent } from './part/skills/skills.component';
 import { ResumeComponent } from './part/resume/resume.component';
-import { ProjectsComponent } from './part/projects/projects.component';
+import { ProjectsComponent } from './part/project/projects.component';
+import { MainpageComponent } from './mainpage/mainpage.component';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +21,9 @@ import { ProjectsComponent } from './part/projects/projects.component';
     AboutComponent,
     SkillsComponent,
     ResumeComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    MainpageComponent,
+    ProjectDetailComponent,
   ],
   imports: [
     BrowserModule,

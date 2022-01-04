@@ -23,23 +23,12 @@
 
     <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-js filter-java">
-        <a href="./projectDetail.html" target="_blank">
+      <div *ngFor="let proj of projects" class="col-lg-4 col-md-6 portfolio-item {{proj.selectors}}">
+        <a routerLink="/project-detail">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/basemathgenerator-thumb.png" class="img-fluid" alt="">
+            <img src="{{proj.thumbImage}}" class="img-fluid" alt="" id="{{proj.name}}}">
           </div>
         </a>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-js filter-java">
-        <div class="portfolio-wrap">
-          <img src="assets/img/portfolio/quizelementary-thumb.png" class="img-fluid" alt="">
-          <div class="portfolio-links">
-            <a href="assets/img/portfolio/quizelementary.png" data-gallery="portfolioGallery"
-               class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-            <a href="./projectDetail.html" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
       </div>
 
     </div>
