@@ -3,7 +3,7 @@
   <div class="container">
 
     <div class="section-title">
-      <h2>Portfolio</h2>
+      <h2>Hobby projects</h2>
       <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
         consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
         fugiat sit in iste officiis commodi quidem hic quas.</p>
@@ -23,8 +23,12 @@
 
     <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
-      <div *ngFor="let proj of projects" class="col-lg-4 col-md-6 portfolio-item {{proj.selectors}}">
-        <a routerLink="/project-detail">
+      <div *ngFor="let proj of projects"
+           class="col-lg-4 col-md-6 portfolio-item {{proj.selectors}}"
+            >
+        <a routerLink="/project-detail"
+           (click)="sendData(proj.name)"
+        >
           <div class="portfolio-wrap">
             <img src="{{proj.thumbImage}}" class="img-fluid" alt="" id="{{proj.name}}}">
           </div>

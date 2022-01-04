@@ -13,6 +13,7 @@ import { MainpageComponent } from './mainpage/mainpage.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +25,7 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
     ProjectsComponent,
     MainpageComponent,
     ProjectDetailComponent,
+
   ],
   imports: [
     BrowserModule,

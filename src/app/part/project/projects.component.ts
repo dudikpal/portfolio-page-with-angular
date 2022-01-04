@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {projectList} from "./projectList";
 import {Project} from "./project";
+import {BaseService} from "../../service/base.service";
+
 
 @Component({
   selector: 'app-projects',
@@ -10,8 +12,11 @@ import {Project} from "./project";
 export class ProjectsComponent implements OnInit {
 
   projects: Project[] = [];
+  //selectedProjectName: string = this.projects[0].name;
 
-  constructor() {
+  constructor(
+    private baseService: BaseService
+  ) {
     this.fillProjects();
   }
 
@@ -19,9 +24,11 @@ export class ProjectsComponent implements OnInit {
 
   }
 
-  public getProjects(): Project[] {
-    return this.projects;
+  sendData(data: string) {
+    console.log('proj comp: ' + data)
+    this.baseService.emitData(data);
   }
+
 
   fillProjects(): void {
     for (let project of projectList) {
