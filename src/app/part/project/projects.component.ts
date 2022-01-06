@@ -24,8 +24,7 @@ export class ProjectsComponent implements OnInit {
 
   }
 
-  sendData(data: string) {
-    console.log('proj comp: ' + data)
+  sendData(data: Project) {
     this.baseService.emitData(data);
   }
 

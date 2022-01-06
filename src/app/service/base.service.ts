@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import {Subject} from "rxjs";
+import {Project} from "../part/project/project";
 
 @Injectable({
   providedIn: 'root'
@@ -8,10 +9,12 @@ export class BaseService {
 
   observer = new Subject();
   public subscribers = this.observer.asObservable();
+  public selectedProject!: Project;
 
-  emitData(data: string) {
-    this.observer.next(data);
-    console.log('service:' + data)
+  emitData(data: Project) {
+    //this.observer.next(data);
+    this.selectedProject = data;
+
   }
 
   constructor() { }

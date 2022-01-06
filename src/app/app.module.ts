@@ -11,6 +11,9 @@ import { ResumeComponent } from './part/resume/resume.component';
 import { ProjectsComponent } from './part/project/projects.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { TextareaComponent } from './project-detail/textarea/textarea.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import { CarouselComponent } from './project-detail/carousel/carousel.component';
 
 
 
@@ -25,11 +28,14 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
     ProjectsComponent,
     MainpageComponent,
     ProjectDetailComponent,
+    TextareaComponent,
+    CarouselComponent,
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

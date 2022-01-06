@@ -13,24 +13,16 @@ export class ProjectDetailComponent implements OnInit {
 
   selectedProject!: Project;
 
+
   constructor(
     private baseService: BaseService
   ) { }
 
   ngOnInit(): void {
-    this.baseService.subscribers.subscribe(data => {
-      console.log(data);
-    })
+    /*this.baseService.subscribers.subscribe(data => {
+      console.log('detail data: ' + data);
+    })*/
+    this.selectedProject = this.baseService.selectedProject;
+
   }
-
-
-
-  /*detailedProject(projectName: string) {
-    for (const project of this.projects) {
-      if (projectName === project.name) {
-        this.selectedProject = project;
-      }
-    }
-  }*/
-
 }

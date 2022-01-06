@@ -11,10 +11,10 @@ export const projectList = [
     'Java (Spring Boot), JavaScript',
     'https://basic-math-training.herokuapp.com/',
     `Generate basic mathematical expressions, like
-    addition, subtraction,
-     multiply and divide.
-    Help to the student in math learning, and training
-    them.`,
+  addition, subtraction,
+  multiply and divide.
+Help to the student in math learning, and training
+  them.`,
   ],
   [
     'quizgame-elementary',
@@ -32,8 +32,8 @@ export const projectList = [
   'Java (Spring Boot), JavaScript, MongoDB (MongoCloud)',
   'https://quizgame-elementary.herokuapp.com/',
   `This "game" working with a database (MongoDB).
-  Has an admin page with password security (Spring Security),
-  where the admin can create, update, and upload questions from file too.
-  Also create new category.`,
+Has an admin page with password security (Spring Security),
+where the admin can create, update, and upload questions from file too,
+also create new category.`,
   ]
 ];
